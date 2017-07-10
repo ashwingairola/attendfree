@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashwingairola.attendfree">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StarterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EnterSubjectsActivity" />
+        <activity android:name=".DaysActivity" />
+        <activity android:name=".CreateTimeTableActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ViewTimeTableActivity" />
+        <activity android:name=".TimeTableActivity" />
+        <activity android:name=".StarterSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateAttendanceActivity" />
+        <activity android:name=".ViewSubjectStatusActivity" />
+        <activity android:name=".SubjectDetailsActivity" />
+        <activity android:name=".AlarmActivity" />
+
+        <receiver android:name=".AlarmBroadcastReceiver" />
+        <receiver android:name=".UpdateAttendanceReceiver" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_purple"
+    tools:context="com.ashwingairola.attendfree.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/status_view">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="80sp"
+            android:text="100%"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:id="@+id/overall_percentage"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overall_percentage"
+            android:id="@+id/least_attendance_in"
+            android:layout_centerHorizontal="true"
+            android:text="Least attendance in:"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/least_attendance_in"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Safe"
+            android:textSize="20sp"
+            android:id="@+id/overall_status"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_button"
+        android:text="View Time-Table"
+        android:layout_margin="10dp"
+        android:id="@+id/view_time_table_button"
+        android:onClick="onClickViewTimeTableButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_button"
+        android:layout_margin="10dp"
+        android:text="View Subject Status"
+        android:id="@+id/view_subject_status_button"
+        android:onClick="onClickViewSubjectStatusButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button"
+        android:layout_margin="10dp"
+        android:text="Update Today's Attendance"
+        android:id="@+id/update_attendance_button"
+        android:onClick="onClickUpdateButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button"
+        android:layout_margin="10dp"
+        android:text="Set Reminder"
+        android:id="@+id/set_alarm_button"
+        android:onClick="onClickSetReminderButton" />
+</LinearLayout>

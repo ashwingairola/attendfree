@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AttendFree</string>
+    <string name="welcome_app_setup">Welcome to AttendFree! Please enter your details for initializing the app.</string>
+    <string name="username">Name</string>
+    <string name="institution">Institution</string>
+    <string name="designation">Designation</string>
+    <string name="num_of_subjects">Number of subjects</string>
+    <string name="classes_per_day">Classes per day</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="reset">Reset</string>
+    <string name="subject">Subject</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="min_percentage">Min. % Attendance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
